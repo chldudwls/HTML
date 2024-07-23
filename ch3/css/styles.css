@@ -1,0 +1,123 @@
+/*1. 'h1' 태그를 선택하세요*/
+h1{
+    color: #4A90E2;
+
+} 
+/*2. 'header' 태그를 선택하세요.*/ 
+header {
+    background-color: #F5F5F5;   
+}
+/*3. 클래스 이름이 'highlight'인 'span' 요소를 선택하세요*/ 
+span.highlight {
+    color: #F39C12;
+}
+/*4. 'nav'요소 안의 모든 'a' 요소를 선택하세요.*/ 
+nav a {
+    color: #E74C3C;
+}
+/*5. 클래스 이름이 'inpro'인 모든 'section'요소를 선택하세요*/
+section.intro {
+    background-color:  #E8F4F8;
+}  
+/*6. 클래스 이름이 'title'인 모든 'h2' 요소를 선택하세요*/
+.title {
+    color: #27ae60;
+}
+/*7. 첫 번쨰 'article' 클래스를 가진 `div` 요소를 선택하세요*/
+
+.content > div:first-child {
+    background-color: #bdc3c7;
+} 
+/*8.*/ 
+.content > div:nth-child(2) {
+    background-color: #fad7a0;
+} 
+/*9.'article' 클래스를 가진 `div` 요소 내의 `p` 요소를 선택*/
+.article > p {
+         color: #9b59b6;
+}
+/*10.모든 `section` 요소를 선택*/
+section{
+    border: 1px dashed #e74c3c;
+} 
+/*11.`footer`요소 안의 모든 `a`요소를 선택하세요.*/
+footer a {
+    color: #34495e;
+} 
+/*12.`header` 요소의 안의 첫 번째 `li` 요소를 선택하세요.*/ 
+header li:nth-child(1){   
+    border: 1px solid #111;
+}
+/*13.`header` 요소의 안의 마지막 `li` 요소를 선택하세요.*/
+header ul:last-child{
+    background-color: #d5dbdb;
+}
+/*14.`header` 자식 `nav` 자식 `ul` 자식 요소의 모든 `li` 요소를 선택하세요.*/ 
+header > nav > ul >li {
+    background-color: #d5dbdb;
+}
+/*15.*/ 
+header > nav > ul > li:nth-child(1) > a{
+    color: #00f;
+}
+/*16.*/
+header > nav > ul > li:nth-child(2) > a{
+    color: #0f0;
+}
+/*17.*/
+body > section{
+    border: 1px solid #bdc3c7;
+}
+/*18.*/ 
+.content h2{
+    color: #1f6180;
+}
+/*19.*/ 
+header li{
+    list-style-type: spuare;
+}
+/*20.*/ 
+footer a:nth-child(2){
+    color: #27ae60;
+}
+/*21.*/ 
+section:first-child {
+    border: 2px dashed #16a085;
+}
+/*22.*/ 
+section:last-child{
+    background-color: #bbe1ee;
+}
+/*23.*/ 
+p:first-child{
+    color: #d35400;
+}
+/*24.*/ 
+P:last-of-type{
+    font-style: italic;
+    color: #2980b9;
+}
+/*25.*/ 
+.title + p{
+    background-color: #e8f4f8;
+}
+/*26.*/ 
+.title ~ *{
+    color: #8e44ad;
+}
+/*27.*/ 
+h2:first-of-type{
+    color: #367e22;
+}
+/*28.*/ 
+ol > li:nth-child(2n+1){
+    color: orange;
+}
+/*29.*/ 
+.intro:hover{
+    background-color: E74c3c;
+}
+/*30.*/ 
+ooter > a:last-child::after{
+    content: 'ⓒ';
+}
