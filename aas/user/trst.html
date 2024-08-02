@@ -5,31 +5,103 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>주소 입력</title>
         <style>
-            table {
-                width: 100%; /* 테이블의 너비를 100%로 설정 */
-                border-collapse: collapse; /* 테이블의 경계가 겹치지 않게 설정 */
-            }
-            td {
-                padding: 8px; /* 셀의 패딩을 설정 */
-                border: 1px solid #ddd; /* 셀의 테두리 색상 설정 */
-            }
-            .highlight3 {
-                width: 300px; /* 입력창의 너비를 300px로 설정 */
-            }
-            button {
-                margin-left: 10px; /* 버튼과 입력창 사이의 여백 설정 */
-            }
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 360px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .input-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.login-guide {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-guide p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-guide .links a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.login-guide .links a:hover {
+    text-decoration: underline;
+}
+
         </style>
-    </head>
-    <body>
-        <table>
-            <tr>
-                <td class="highlight1">주소</td>
-                <td>
-                    <input class="highlight3" type="text" name="name" value="">
-                    <button type="submit">우편번호찾기</button>
-                </td>
-            </tr>
-        </table>
-    </body>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form">
+            <div class="input-group">
+                <label for="username">아이디 입력</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">비밀번호 입력</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="login-guide">
+            <p>아직 회원이 아니시면 회원으로 가입하세요.</p>
+            <div class="links">
+                <a href="#">아이디</a> |
+                <a href="#">비밀번호찾기</a> |
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
