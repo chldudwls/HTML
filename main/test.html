@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,15 +12,14 @@
             padding: 10px;
             text-align: center;
         }
-        .sql{
+        .sql {
             width: 100%;
             height: auto;
             border: 1px solid;
             box-sizing: border-box;
         }
-        .sql > .header{
+        .sql > .header {
             width: 1920px;
-            height: auto;
             display: flex;
             justify-content: space-around;
             padding: 20px;
@@ -29,7 +27,7 @@
             box-sizing: border-box;
             margin: 0 auto;
         }
-        .content{
+        .content {
             width: 100%;
             height: auto;
             border: 1px solid;
@@ -37,7 +35,6 @@
         }
         .content > .conbox {
             width: 1920px;
-            height: px;
             display: flex;
             justify-content: space-around;
             padding: 20px;
@@ -45,17 +42,15 @@
             box-sizing: border-box;
             margin: 0 auto;
         }
-        .content2{
+        .content2 {
             width: 100%;
             height: auto;
             border: 1px solid;
             box-sizing: border-box;
         }
-        .content2 > .conbox2{
+        .content2 > .conbox2 {
             width: 1920px;
-            height: px;
-            display: flex;
-            justify-content: space-around;
+            height: auto;
             padding: 20px;
             border: 1px solid;
             box-sizing: border-box;
@@ -66,7 +61,7 @@
             width: 30%; /* 필요에 따라 너비 조정 */
             box-sizing: border-box;
         }
-        .content3{
+        .content3 {
             width: 100%;
             height: auto;
             border: 1px solid;
@@ -74,7 +69,7 @@
         }
         .content3 > .conbox3 {
             width: 1920px;
-            height: px;
+            height: auto;
             display: flex;
             justify-content: space-around;
             padding: 20px;
@@ -82,12 +77,9 @@
             box-sizing: border-box;
             margin: 0 auto;
         }
-       
-        .section > div{
-            float: left;
+        .section {
             width: 30%;
         }
-
         .section h2 {
             border-bottom: 2px solid #ccc;
             padding-bottom: 10px;
@@ -99,45 +91,38 @@
         .section ul li {
             padding: 5px 0;
         }
-        .condiv {
-            background-color: #f8f8f8;
-            padding: 10px;
-            text-align: center;
-        }
-        .customer, .account, .announce {
+        .customer, .account, .ment {
             margin-top: 20px;
         }
-        .customer p, .accountp, .announce p {
+        .customer p, .account p, .ment p {
             margin: 5px 0;
         }
     </style>
 </head>
 <body>
-   
- <main>
-    <section class="sql">
-        <div class="header">
-            <table>
-                <tr>
-                    <td><img src="./images/ico_latest.gif" alt=">"></td>
-                    <td><a href="#">테스트 입니다</a></td> 
-                    <td>20-05-13</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/ico_latest.gif" alt=">"></td>
-                    <td><a href="#">테스트 입니다</a></td> 
-                    <td>20-05-13</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-     <section class="content">
-        <article class="conbox">
+    <main>
+        <section class="sql">
+            <div class="header">
+                <table>
+                    <tr>
+                        <td><img src="./images/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">테스트 입니다</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">테스트 입니다</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="content">
+            <article class="conbox">
                 <div class="section">
                     <h2>텃밭 가꾸기</h2>
                     <p>생활 속 작은 공간을 활용하는 텃밭 가꾸기</p>
                     <ul>
-                    <td><img src="./images/ico_latest.gif" alt=">"></td>
                         <li>토마토! 건강하게 길러... 20-12-22</li>
                         <li>토마토! 건강하게 길러... 20-12-22</li>
                         <li>토마토! 건강하게 길러... 20-12-22</li>
@@ -167,10 +152,10 @@
                         <li>토마토! 건강하게 길러... 20-12-22</li>
                     </ul>
                 </div>
-            </section>
-        </article>
-     <section class="content2">
-        <article class="conbox2">
+            </article>
+        </section>
+        <section class="content2">
+            <article class="conbox2">
                 <div class="condiv customer">
                     <ul class="costomerUl">
                         <p>고객센터안내: 1666-7777</p>
@@ -201,16 +186,16 @@
                     </ul>
                 </div>
             </article>
-     </section>
- </main>
+        </section>
+    </main>
     <footer class="content3">
         <section class="conbox3">
-        </div>
-            <p>(주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-부산진구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호</p>
-            <p>등록번호 팜스토리1234 (2013.04.01) / 발행인: 홍길동</p>
-            <p>대표: 김성혁 / 이메일: chohans@google.com / 전화: 091-234-5678 / 부산광역시 부산진구 부전동 123</p>
-            <p>copyright ⓒ 팜스토리. All rights reserved.</p>
-        </div>
+            <div>
+                <p>(주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-부산진구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호</p>
+                <p>등록번호 팜스토리1234 (2013.04.01) / 발행인: 홍길동</p>
+                <p>대표: 김성혁 / 이메일: chohans@google.com / 전화: 091-234-5678 / 부산광역시 부산진구 부전동 123</p>
+                <p>copyright ⓒ 팜스토리. All rights reserved.</p>
+            </div>
         </section>
     </footer>
 </body>
