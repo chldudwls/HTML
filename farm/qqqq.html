@@ -8,48 +8,52 @@
         body {
             font-family: Arial, sans-serif;
         }
-        .header {
-            background-color: #f8f8f8;
-            padding: 10px;
-            text-align: center;
-        }
-        .sql{
+       
+        .main_sc{
             width: 100%;
             height: auto;
             border: 1px solid;
             box-sizing: border-box;
         }
-        .sql > .header{
+        .main_sc > .header{
             width: 1920px;
             height: auto;
             display: flex;
-            justify-content: space-around;
-            padding: 20px;
             border: 1px solid;
             box-sizing: border-box;
             margin: 0 auto;
+            
         }
         .content{
             width: 100%;
             height: auto;
             border: 1px solid;
             box-sizing: border-box;
+            overflow: hidden;
         }
         .content > .conbox {
-            width: 1920px;
-            height: px;
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
+        width: 1920px;
+        height: auto; /* 높이를 자동으로 조정하여 내용에 맞게 조절 */
+        border: 1px solid;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex; /* 자식 div를 flexbox로 배치 */
+        align-items: center; /* 수직 중앙 정렬 */
+        justify-content: center; /* 수평 중앙 정렬 */
+        margin: 0 auto;
+        }
+        .content > .conbox > .section{
+            width: 100%; /* section의 너비에 맞게 조정 */
+            height: 100%; /* section의 높이에 맞게 조정 */
+            border: 1px solid;
+        }
+        .content2{
+            position: relative;   
+            height: auto;            
+            width: 100%;
             border: 1px solid;
             box-sizing: border-box;
             margin: 0 auto;
-        }
-        .content2{
-            width: 100%;
-            height: auto;
-            border: 1px solid;
-            box-sizing: border-box;
         }
         .content2 > .conbox2{
             width: 1920px;
@@ -62,25 +66,33 @@
             margin: 0 auto;
         }
         .conbox2 .condiv {
-            float: left; /* 각 div를 왼쪽 정렬 */
-            width: 30%; /* 필요에 따라 너비 조정 */
-            box-sizing: border-box;
+          
         }
         .content3{
+            position: relative;   
+            height: auto;            
             width: 100%;
-            height: auto;
-            border: 1px solid;
-            box-sizing: border-box;
-        }
-        .content3 > .conbox3 {
-            width: 1920px;
-            height: px;
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
             border: 1px solid;
             box-sizing: border-box;
             margin: 0 auto;
+        }
+        .content3 > .conbox3 {
+            width: 1920px;
+            height: auto;
+            padding: 40px;
+            border: 1px solid;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        footer.content3 img {
+            margin: 20px 0;
+        }
+        footer.content3 p {
+            text-align: center;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px; /* 필요에 따라 조절 */
+            font-size: 20px;
         }
        
         .section > div{
@@ -110,61 +122,99 @@
         .customer p, .accountp, .announce p {
             margin: 5px 0;
         }
+        .banner_images1, .banner_images2 {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .banner_images1 {
+            background-image: url('../farm/images/main_banner_sub1_bg.jpg');
+        }
+        
+        .banner_images2 {
+            background-image: url('../farm/images/main_banner_sub2_bg.jpg');
+        }
+
+        .banner_images1 span, .banner_images2 span {
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .banner_images1 span:first-child {
+            font-size: 20px;
+        }
+
+        .banner_images2 span:first-child {
+            font-size: 18px;
+        }
+        .banner_images1 span, .banner_images2 .up{
+            display: block;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
    
  <main>
-    <section class="sql">
+    <section class="main_sc">
         <div class="header">
-            <table>
-                <tr>
-                    <td><img src="./images/ico_latest.gif" alt=">"></td>
-                    <td><a href="#">테스트 입니다</a></td> 
-                    <td>20-05-13</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/ico_latest.gif" alt=">"></td>
-                    <td><a href="#">테스트 입니다</a></td> 
-                    <td>20-05-13</td>
-                </tr>
-            </table>
+            
+                <div class="banner_images1">
+                    <tr>
+                        <img src="../farm/images/main_banner_sub1_tit.png"
+                    </tr>
+                </div>
+                <div class="banner_images2">
+                    <tr>
+                        <img src="../farm/images/main_banner_sub2_tit.png">
+                    </tr>
+                </div>
         </div>
     </section>
      <section class="content">
         <article class="conbox">
                 <div class="section">
-                    <h2>텃밭 가꾸기</h2>
-                    <p>생활 속 작은 공간을 활용하는 텃밭 가꾸기</p>
-                    <ul>
-                    <td><img src="./images/ico_latest.gif" alt=">"></td>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
+                    <img src="../farm/images/main_latest1_tit.png">
+                    <ul class="images">
+                        <img src="../farm/images/main_latest1_img.jpg" alt="">
+                    </ul>
+                    <ul class="text">
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
                     </ul>
                 </div>
                 <div class="section">
-                    <h2>귀농학교</h2>
-                    <p>귀농을 계획하고 계신가요?</p>
-                    <ul>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
+                    <img src="../farm/images/main_latest2_tit.png">
+                    <ul class="images">
+                        <td><img src="../farm/images/main_latest2_img.jpg" alt=">"></td>
+                    </ul>
+                    <ul class="text">
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
                     </ul>
                 </div>
                 <div class="section">
-                    <h2>농작물이야기</h2>
-                    <p>팜스토리의 농작물 이야기</p>
-                    <ul>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
-                        <li>토마토! 건강하게 길러... 20-12-22</li>
+                    <img src="../farm/images/main_latest3_tit.png">
+                    <ul class="images">
+                        <td><img src="../farm/images/main_latest3_img.jpg" alt=">"></td>
+                    </ul>
+                    <ul class="text">
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
+                        <li><a href="#"> 건강하게 길러... 20-12-22</a></li>
                     </ul>
                 </div>
             </section>
@@ -172,17 +222,19 @@
      <section class="content2">
         <article class="conbox2">
                 <div class="condiv customer">
+                   <img src="../farm/images/main_sub2_cs_tit.png" alt="고객센터">
+                   <img src="../farm/images/main_sub2_cs_img.png" alt="고객센터">
                     <ul class="costomerUl">
-                        <p>고객센터안내: 1666-7777</p>
-                        <p>FAX: 02-123-4567</p>
+                    <img src="../farm/images/main_sub2_cs_txt.png" alt="고객센터">    
+                    
                         <p>평일: AM 09:00 ~ PM 06:00</p>
                         <p>점심: PM 12:00 ~ PM 01:00</p>
                         <p>토, 일요일, 공휴일 휴무</p>
                     </ul>
                 </div>
                 <div class="condiv account">
+                    <img src="..//farm/images/main_sub2_account_tit.png" alt="계좌 안내">
                     <ul class="accountUl">
-                        <p>계좌안내:</p>
                         <p>기업은행 123-456789-01-01-012</p>
                         <p>국민은행 01-1234-56789</p>
                         <p>우리은행 123-456789-01-01</p>
@@ -191,13 +243,13 @@
                     </ul>
                 </div>
                 <div class="condiv ment">
+                    <img src="../farm/images/main_sub2_notice_tit.png" alt="공지상황">
                     <ul class="mentUl">
-                        <p>공지사항:</p>
-                        <p>안녕하세요. 홈페이지 오픈 기념 이벤트 ... 20-12-22</p>
-                        <p>안녕하세요. 홈페이지 오픈 기념 이벤트 ... 20-12-22</p>
-                        <p>안녕하세요. 홈페이지 오픈 기념 이벤트 ... 20-12-22</p>
-                        <p>안녕하세요. 홈페이지 오픈 기념 이벤트 ... 20-12-22</p>
-                        <p>안녕하세요. 홈페이지 오픈 기념 이벤트 ... 20-12-22</p>
+                        <p><a href="#">홈페이지 오픈 기념 이벤트 ... 20-12-22</a></p>
+                        <p><a href="#">홈페이지 오픈 기념 이벤트 ... 20-12-22</a></p>
+                        <p><a href="#">홈페이지 오픈 기념 이벤트 ... 20-12-22</a></p>
+                        <p><a href="#">홈페이지 오픈 기념 이벤트 ... 20-12-22</a></p>
+                        <p><a href="#">홈페이지 오픈 기념 이벤트 ... 20-12-22</a></p>
                     </ul>
                 </div>
             </article>
@@ -206,10 +258,13 @@
     <footer class="content3">
         <section class="conbox3">
         </div>
-            <p>(주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-부산진구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호</p>
-            <p>등록번호 팜스토리1234 (2013.04.01) / 발행인: 홍길동</p>
-            <p>대표: 김성혁 / 이메일: chohans@google.com / 전화: 091-234-5678 / 부산광역시 부산진구 부전동 123</p>
-            <p>copyright ⓒ 팜스토리. All rights reserved.</p>
+            <img src="../farm/images/logo.png">
+            <p>
+                (주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-부산진구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br>
+                등록번호 팜스토리1234 (2013.04.01) / 발행인: 홍길동<br>
+                대표: 김성혁 / 이메일: chohans@google.com / 전화: 091-234-5678 / 부산광역시 부산진구 부전동 123<br>
+                copyright ⓒ 팜스토리. All rights reserved.<br>
+            </p>        
         </div>
         </section>
     </footer>
