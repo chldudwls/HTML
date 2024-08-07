@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 날짜 표시하기</title>
+    <script>
+        function displayDate() {
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('date').innerText = today.toLocaleDateString('ko-KR', options);
+        }
+        window.onload = displayDate;
+    </script>
+</head>
+<body>
+    <h1>현재 날짜</h1>
+    <p id="date"></p>
+</body>
+</html>
