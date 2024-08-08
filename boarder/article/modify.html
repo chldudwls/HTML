@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board System</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font: normal 12px 'Inter';
+        }
+        ul, ol { list-style: none; }
+        a { text-decoration: none; color: #111; }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+
+        header > p {
+            font-size: 10px;
+        }
+        p {
+        font-weight:900;
+        }
+        .logout {
+            cursor: pointer;
+        }
+        .logout:hover {
+        text-decoration: underline;
+        }
+        .greeting {
+            color: #000;
+            text-align: right;
+        }
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #E9E9E9
+        }
+
+        th {
+            background: #F5F8F9;
+            text-align: center;
+        }
+        .trTop td {
+        border-top: 2px solid #111111;
+        }
+        input[type="text"], textarea {
+            width: calc(100% - 20px); 
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            resize: none;
+        }
+        button {
+            background-color: #4b545e;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: right;
+        }
+        button.cancel {
+            background-color: #fff;
+        color: black;
+        border: 1px solid #BEBEBE;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        button.cancel:hover {
+            opacity: 0.9;
+        }
+        footer {
+            display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        font-size: 12px;
+        color: #777;
+        }
+        .buttonContainer {
+            text-align: right; /* 버튼을 오른쪽 정렬 */
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <p>Board System</p>
+        <div class="greeting">
+            홍길동님 반갑습니다. <span class="logout" onclick="logout()">[로그아웃]</span> <!-- 텍스트 링크로 변경 -->
+        </div>
+    </header>
+    <p>글수정</p>
+    <table>
+        <tr class="trTop">
+            <th>제목</th>
+            <td><input type="text" placeholder="제목을 입력하세요."></td>
+        </tr>
+        <tr>
+            <th>내용</th>
+            <td><textarea rows="20"></textarea></td>
+        </tr>
+        <tr>
+            <th>파일</th>
+            <td><input type="file"></td>
+        </tr>
+    </table>
+    <div class="buttonContainer">
+        <button class="cancel" onclick="location.href='list.html'">취소</button>
+        <button onclick="location.href='list.html'">작성완료</button>
+    </div>
+    <footer>
+        <span>Copyright © 이도영(개발에반하다.)</span>
+        <span>v1.0.1</span>
+    </footer>
+</div>
+</body>
+</html>

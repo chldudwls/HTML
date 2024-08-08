@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의설정</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font: 12px 'noto sans korean';
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #111;
+    }
+
+    input,
+    textarea {
+      outline: none;
+    }
+
+    #wrapper{
+      width:800px;
+      margin: 0 auto;
+    }
+    main {
+      width: 600px;
+      height: 578px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      margin-top: 80px;
+      position: relative;
+    }
+
+    form {
+      box-sizing: border-box;
+      margin-top: 16px;
+      height: 507px;
+    }
+    
+    header {
+      width: 800px;
+      margin: 0 auto;
+    }
+    .title {
+      margin-top:10px;
+      font-size: 10px;
+      line-height: 12.25px;
+    }
+    .subtitle {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+    .myInfoSet {
+      width: 100%;
+      border: 1px solid black;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    .myInfoChan{
+      width: 100%;
+      
+      box-sizing: border-box;
+    }
+    table{
+      
+      border-collapse: collapse;
+    }
+    .addr{
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+    .findAddr{
+      display: inline-block;
+    }
+    .addr:nth-child(3){
+      display: block;
+      width : 362px;
+    }
+    .addr:nth-child(4){
+      display: block;
+      width : 362px;
+      margin-bottom: 0px;
+    }
+    tbody {
+      border:1px solid black;
+      border-top: 2px solid black;
+    }
+    td {
+      border: 1px solid #E9E9E9;
+      border-top : none;
+      border-right: none;
+    }
+    table tr:nth-last-of-type(1)> td{
+      border-bottom: none;
+    }
+    .col1{
+      border-left : none;
+    }
+    .col1 {
+    background-color: #F5F8F9;
+    padding : 4px 0;
+    padding-left: 12px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 105px;
+    height: auto;
+    }
+    .col2 {
+    text-align: left;
+    padding : 6px 12.5px;
+    }
+    .nicknameP {
+      margin : 0 0;
+      margin-bottom: 3px;
+    } 
+    input.txt { 
+      width: 164px;
+      height: 24px;
+      border: 1px solid #E4EAEC;
+      background-color: #F7F7F7;
+    }
+    input::placeholder {
+      color: #757575;
+      text-indent: 6px;
+    }
+    .changePass{
+      width: 85px;
+      height: 27px;
+      background-color: #2E658A;
+      color : #FFFFFF;
+      border: none;
+    }
+    .button:hover{
+      opacity: 80%;
+      cursor: pointer;
+    }
+    .userOut {
+      width: 58px;
+      height: 27px;
+      background-color: #ED2F2F;
+      color : #FFFFFF;
+      border: none;
+    }
+    .nicknameButton {
+      background-image: url("/images/chk_id.gif");
+      width: 60px;
+      height: 19px;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: #FFFFFF;
+    }
+    .emailButton {
+      background-image: url("/images/chk_auth.gif");
+      width: 80px;
+      height: 19px;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: #FFFFFF;
+    }
+    .findAddr {
+      background-image: url("/images/chk_post.gif");
+      width: 80px;
+      height: 19px;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: #FFFFFF;
+      margin: auto 0;
+    }
+
+    .confirm {
+      position: absolute;
+      right: 0;
+      bottom: 0px;
+      width: 66px;
+      height: 35px;
+      background-color: #EFEFEF;
+      border: 1px solid #BEBEBE ;
+    }
+    .cancle {
+      position: absolute;
+      right: 68px;
+      bottom: 0px;
+      height: 35px;
+      width: 42px;
+      background-color: #fff;
+      border: 1px solid #BEBEBE ;
+    } 
+    footer {
+      width: 800px;
+      margin: 0 auto;
+      color: #777777;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+  <header><h3 class="title">Board System</h3></header>
+  
+  <main>
+    <section>
+      <form action="#">
+        <p class="subtitle">회원정보 설정</p>
+        <table class="myInfoSet">
+          <tbody>
+            <tr>
+              <td class="col1">아이디</td>
+              <td class="col2"><p>abc</p></td>
+            </tr>
+            <tr>
+              <td class="col1">비밀번호</td>
+              <td class="col2">
+                  <input class="txt" type="password" name="pswd" maxlength="16" placeholder="비밀번호 입력">
+              </td>
+            </tr>
+            <tr>
+              <td class="col1">비밀번호 확인</td>
+              <td class="col2">
+                  <input class="txt" type="password" name="pswdCheck" maxlength="16" placeholder="비밀번호 입력 확인">
+                  <input class='button changePass' type="button" value="비밀번호 수정" onclick="">
+              </td>
+            </tr>
+            <tr>
+              <td class="col1">회원가입날짜</td>
+              <td class="col2"><p>2022-01-01 12:45:12</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="subtitle">개인정보 수정</p>
+        <table class="myInfoChan">
+          <tbody>
+          <tr>
+            <td class="col1">이름</td>
+            <td class="col2">
+              <input class="txt" type="text" name="name" maxlength="16">
+          </td>
+          </tr>
+          <tr>
+            <td class="col1">별명</td>
+            <td class="col2">
+                <p class="nicknameP">공백없는 한글, 영문, 숫자 입력</p>
+                <input class="txt" type="text" name="nickname" maxlength="16" placeholder="별명 입력">
+                <input class='button nicknameButton' type="button" value="" onclick="">
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">이메일</td>
+            <td class="col2">
+                <input class="txt" type="email" name="email" maxlength="16" placeholder="이메일 입력">
+                <input class='button emailButton' type="button"  onclick="">
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">휴대폰</td>
+            <td class="col2">
+                <input class="txt" type="tel" name="phone" maxlength="30" placeholder="휴대폰 입력">
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">주소</td>
+            <td class="col2">
+              <input class="txt addr" type="text" name="ZIP" maxlength="30" placeholder="우편번호">
+              <input class='button findAddr' type="button"  onclick="">
+              <input class="txt addr" type="text" name="addr" maxlength="30"  placeholder="주소 검색">
+              <input class="txt addr" type="text" name="addrMore" maxlength="30"  placeholder="상세주소 입력">
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">회원탈퇴</td>
+            <td class="col2">
+              <input class="button userOut" type="button"  value="탈퇴하기" onclick="" >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <input class="button cancle" type="button"  value="취소" onclick=" location.href = '../article/list.html' " >
+      <input class="button confirm" type="button"  value="회원수정" onclick="location.href = '../article/list.html' " >
+      </form>
+    </section>
+  </main>
+  <footer><p class="copyRight">ⓒCopyright chhak.or.kr</p></footer>
+</div>
+</body>
+
+</html>

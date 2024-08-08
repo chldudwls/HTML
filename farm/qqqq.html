@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,95 +9,77 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         * {
             font-size: 12px;
         }
-        .main_sc {
-            width: 100%;
-            height: auto;
-            border: 1px solid;
-            box-sizing: border-box;
+
+        a {
+            color: black;
+            text-decoration: none;
         }
-        .header {
-            width: 980px;
-            height: auto;
-            display: flex;
-            border: 1px solid;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-        section{
-            width: 980px;
-            height: auto;
-            margin: 0 auto;
-           
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-between;
-        }
-      
-        .container {
-            width: 32%;
-            height: auto;
-            box-sizing: border-box;
-        }
-        .content-sec{
+
+        .section-haeder {
             width: 100%;
             height: auto;
             border: 1px solid;
             box-sizing: border-box;
             overflow: hidden;
         }
-        .content-sec > .content-art{
-            position: relative;
+
+        .div-header {
             width: 980px;
-            height: 186px;
+            height: auto;
+            display: flex;
+            border: 1px solid;
             box-sizing: border-box;
             margin: 0 auto;
+        }
 
-        }
-        .content-sec > .content-art > .div-1{
-            float: left;
-            width: 30%;
-            height: 400px;
-            border: 1px solid black;
+        .section-main {
+            width: 100%;
+            height: auto;
+            border: 1px solid;
             box-sizing: border-box;
+            overflow: hidden;
         }
-        .content-sec > .content-art > .div-1 > .text{
-            width: 194.48;
-            height: 98px;
-            border: 1px solid ;
+        .article-main{
+            width: 980px;
+            height: auto;
+            margin: 0 auto;
             box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid;
             
         }
-        .content-sec > .content-art > .div-2{
-            float: left;
-            width: 30%;
-            height: 400px;
-            border: 1px solid black;
-            box-sizing: border-box;
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            
         }
-        .content-sec > .content-art > .div-3{
-            float: left;
-            width: 30%;
-            height: 400px;
-            border: 1px solid black;
-            box-sizing: border-box;
+
+        .content img {
+            width: 105px;
+            height: 96px;
+            margin-right: 15px;
+            
         }
-        .content > .conbox > .section{
-            width: 100%; /* section의 너비에 맞게 조정 */
-            height: 100%; /* section의 높이에 맞게 조정 */
-            border: 1px solid;
-        }
-        .content-customer{
-            position: relative;   
-            height: auto;            
+
+
+
+        .content-customer {
+            position: relative;
+            height: auto;
             width: 100%;
             border: 1px solid;
             box-sizing: border-box;
             margin: 0 auto;
+            overflow: hidden;
         }
-        .content-customer > .customer-box{
+
+        .content-customer>.customer-box {
             width: 980px;
             height: px;
             display: flex;
@@ -106,16 +89,18 @@
             box-sizing: border-box;
             margin: 0 auto;
         }
-        
-        .content-footer{
-            position: relative;   
-            height: auto;            
+
+        .content-footer {
+            position: relative;
+            height: auto;
             width: 100%;
             border: 1px solid;
             box-sizing: border-box;
             margin: 0 auto;
+            text-overflow: ellipsis;
         }
-        .content-footer > .footer-box {
+
+        .content-footer>.footer-box {
             width: 980px;
             height: auto;
             padding: 40px;
@@ -123,83 +108,38 @@
             box-sizing: border-box;
             margin: 0 auto;
         }
-        
+
         footer.content3 p {
             text-align: center;
             text-align: left;
             margin: 0 auto;
-            max-width: 800px; /* 필요에 따라 조절 */
+            max-width: 800px;
+            /* 필요에 따라 조절 */
             font-size: 20px;
         }
-       
-        .section > div{
-            float: left;
-            width: 30%;
-        }
 
-        .section h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-        }
-        .section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .section ul li {
-            padding: 5px 0;
-        }
-        .condiv {
-            background-color: #f8f8f8;
-            padding: 10px;
-            text-align: center;
-        }
-        .customer, .account, .announce {
-            margin-top: 20px;
-        }
-        .customer p, .accountp, .announce p {
-            margin: 5px 0;
-        }
-        .banner_images1, .banner_images2 {
+        .banner_images1,
+        .banner_images2 {
             flex: 1;
             background-size: cover;
             background-position: center;
         }
-        
+
         .banner_images1 {
             background-image: url('../farm/images/main_banner_sub1_bg.jpg');
         }
-        
+
         .banner_images2 {
             background-image: url('../farm/images/main_banner_sub2_bg.jpg');
         }
-
-        .banner_images1 span, .banner_images2 span {
-            display: block;
-            padding: 10px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        
-        .banner_images1 span:first-child {
-            font-size: 20px;
-        }
-
-        .banner_images2 span:first-child {
-            font-size: 18px;
-        }
-        .banner_images1 span, .banner_images2 .up{
-            display: block;
-            padding: 10px;
-            font-size: 30px;
-            font-weight: bold;
-        }
     </style>
 </head>
+
 <body>
-   
- <main>
-    <section class="main_sc">
-        <div class="div-header">
+
+    <main>
+        <section class="section-haeder">
+            <div class="div-header">
                 <div class="banner_images1">
                     <tr>
                         <img src="../farm/images/main_banner_sub1_tit.png">
@@ -210,111 +150,111 @@
                         <img src="../farm/images/main_banner_sub2_tit.png">
                     </tr>
                 </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <img src="../farm/images/main_latest1_tit.png">
-            <div class="content">
-                <img src="./images/main_latest3_img.jpg" alt="텃밭가꾸기">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
-        </div>
-        <div class="container">
-            <img src="../farm/images/main_latest1_tit.png">
-           
-            <div class="content">
-                <img src="./images/main_latest3_img.jpg" alt="텃밭가꾸기">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="container">
-            <img src="../farm/images/main_latest1_tit.png">
-            <div class="content">
-                <img src="./images/main_latest3_img.jpg" alt="텃밭가꾸기">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        </section>
+        <section class="section-main">
+            <article class="article-main">
+                <div class="container">
+                    <img src="../farm/images/main_latest1_tit.png">
+                    <div class="content">
+                        <img src="./images/main_latest3_img.jpg" alt="텃밭가꾸기">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="../farm/images/main_latest1_tit.png">
 
-    
-    </section>
-     <section class="content-customer">
-        <article class="customer-box">
+                    <div class="content">
+                        <img src="./images/main_latest3_img.jpg" alt="텃밭가꾸기">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="../farm/images/main_latest1_tit.png">
+                    <div class="content">
+                        <img src="./images/main_latest3_img.jpg" alt="텃밭가꾸기">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="link">> 토마토! 건강하게 길러...</a></td>
+                                    <td>20-12-22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="content-customer">
+            <article class="customer-box">
                 <div class="customer">
-                   <img src="../farm/images/main_sub2_cs_tit.png" alt="고객센터">
-                   <img src="../farm/images/main_sub2_cs_img.png" alt="고객센터">
+                    <img src="../farm/images/main_sub2_cs_tit.png" alt="고객센터">
+                    <img src="../farm/images/main_sub2_cs_img.png" alt="고객센터">
                     <ul class="costomerUl">
-                    <img src="../farm/images/main_sub2_cs_txt.png" alt="고객센터">    
-                    
+                        <img src="../farm/images/main_sub2_cs_txt.png" alt="고객센터">
+
                         <p>평일: AM 09:00 ~ PM 06:00</p>
                         <p>점심: PM 12:00 ~ PM 01:00</p>
                         <p>토, 일요일, 공휴일 휴무</p>
@@ -322,6 +262,7 @@
                 </div>
                 <div class="account">
                     <img src="..//farm/images/main_sub2_account_tit.png" alt="계좌 안내">
+                    <img src="./images/main_sub2_cs_tit.png" alt="계좌 안내">
                     <ul class="accountUl">
                         <p>기업은행 123-456789-01-01-012</p>
                         <p>국민은행 01-1234-56789</p>
@@ -341,20 +282,21 @@
                     </ul>
                 </div>
             </article>
-     </section>
- </main>
+        </section>
+    </main>
     <footer class="content-footer">
         <section class="footer-box">
-        </div>
+            </div>
             <img src="../farm/images/logo.png">
             <p>
                 (주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-부산진구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br>
                 등록번호 팜스토리1234 (2013.04.01) / 발행인: 홍길동<br>
                 대표: 김성혁 / 이메일: chohans@google.com / 전화: 091-234-5678 / 부산광역시 부산진구 부전동 123<br>
                 copyright ⓒ 팜스토리. All rights reserved.<br>
-            </p>        
-        </div>
+            </p>
+            </div>
         </section>
     </footer>
 </body>
+
 </html>

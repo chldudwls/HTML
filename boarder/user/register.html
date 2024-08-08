@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+    
+  
+    *{
+    padding: 0;
+    margin: 0;
+    font : normal 12px 'noto sans';
+}
+header,footer{
+    padding-top: 10px;
+    width: 600px;
+    margin: 0 auto;
+}
+header>h3{
+    position: relative;
+    left: -100px;
+}
+    * input{
+        border: 1px solid #e4eaec;
+        background: #f7f7f7;
+   
+    }
+    p{
+      margin: 5px 0;
+      font-weight: bold;
+    }
+   
+    main{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    #uid{
+        width: 600px;
+        height: auto;
+        
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    #uid > form{
+        width: 600px;
+        height: auto;   
+        box-sizing: border-box;
+    }
+       table{
+        width: 100%;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    .uid, .pass, .newpass {
+        background: #f0f0f0;
+        width: 105px;
+        height: 10px;
+
+    }
+    table {
+            width: 100%;
+            border-collapse: collapse; /* 셀 테두리가 겹치지 않도록 설정 */
+            box-sizing: border-box;
+        }
+
+        table td {
+            border: 2px solid #dddddd; /* 연한 회색 테두리 */
+            padding: 6px; /* 셀 패딩 추가 */
+        }
+
+    .name, .nicname, .email, .hp{
+        background: #f0f0f0;
+        width: 105px; 
+        height: 10px;
+    }
+
+    main * input{
+    width: 164px;
+    height: 17px;
+
+    }
+    main * td{
+        position: relative;
+    }
+    .centered-link1{
+        position: absolute;
+        left: 177px;
+    }    
+    .centered-link2{
+        position: absolute;
+        left: 177px;
+    }    
+    .centered-link3{
+        position: absolute;
+        top: 7px;
+        left: 177px;
+    }    
+    .centered-link4{
+        position: absolute;
+        
+        left: 177px;
+    }    
+
+    .inputlight{
+        width: 360px;
+        height: 24px;
+          border: 1px solid #e4eaec;
+    }
+    .addr{
+        background-color: #f0f0f0;
+        justify-content: center;
+        height: 93px;
+    }
+
+    
+    #uid > div:nth-last-child(1){
+        float: right;
+    }
+    .nameText{
+        margin: 0px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        font-family: '맑은 고딕';
+        font-weight: bold; /* 두꺼운 폰트 설정 */
+        
+    }
+    .but1{
+        width: 42px;
+        height: 35px;
+        border: 1px solid #bebebe;
+        font-size: 12px;
+        background: white;
+       
+    }
+    .but2 {
+        border: 1px solid #bebebe;
+        background: #efefef;
+        width: 66px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .but3{
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none; /* 기본 밑줄 제거 */
+        color: black;
+    }
+    
+    footer{
+       width: 100%;
+       height: auto;
+       box-sizing: border-box;
+       position: absolute;
+    }
+    footer > div{
+        width: 790px;
+        height: 17px;
+        margin: 0 auto;
+      
+        
+    }
+    table > tr > .addr{
+        padding: 10px;
+    vertical-align: middle; /* 세로 중앙 정렬 */
+    text-align: center; /* 가로 중앙 정렬 (선택 사항) */
+    }
+   
+
+
+
+
+
+    
+    </style>
+</head>
+<header>
+    <h3>Board System</h3></header>
+<body>
+    <main>
+        <section id="uid">
+            <form>
+                <div><p>사이트 이용정보 입력 </p></div>
+                <table>
+                    <tr>
+                        <td class="uid">아이디</td>
+                    <td><input class="input-uid" type="text" name="uid" placeholder="아이디 입력">
+                        <a href="#" class="centered-link1">
+                            <img src="../images/chk_id.gif" alt="">
+                        </a>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="pass">비밀번호</td>
+                    <td><input  class="input-pass" type="password" name="uid" placeholder="비밀번호 입력"></td>
+               </tr>
+               <tr>
+                    <td class="newpass">비밀번호 확인</td>
+                    <td ><input class="input-newpass" type="password" name="pass" placeholder="비밀번호 입력 확인"></td>
+              </tr>   
+            </table>
+            <div><p>개인정보 입력</p></div>
+            <table>
+                <tr>
+                    <td class="name">이름</td>
+                    <td><input class="input-name" type="text" name="name" placeholder="이름 입력"></td>
+                </tr>
+                <tr>
+                    <td class="nicname">별명</td>
+                
+                    <td>
+                        <p class="nameText">공백없는 한글, 영문, 숫자 입력</p>
+                        <input class="input=nicname" type="text" name="name" placeholder="별명 입력">
+                        <a href="#" class="centered-link2">
+                           <img src="../images/chk_id.gif" alt="중복확인">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="email">이메일</td>
+                    <td><input class="input-email" type="email" name="name" placeholder="이메일 입력">
+                        <a href="#" class="centered-link3">
+                            <img src="../images/chk_auth.gif" alt="인증번호 받기">
+                        </a>
+                </tr>
+                <tr>
+                    <td class="hp">휴대폰</td>
+                    <td><input class="highlight3" type="tel" name="name" placeholder="휴대폰 입력"></td>
+                </tr>
+                <tr>
+                    <td class="addr" rowspan="3">주소</td>
+                    <td><input class="input-addr" type="text" name="zipcode" placeholder="우편번호">
+                      <a href="#" class="centered-link4">
+                            <img src="../images/chk_post.gif" alt="우편번호 찾기">
+                      </a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputlight" type="text" name="address" placeholder="주소 검색"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputlight" type="text" name="detailAddress" placeholder="상세주소 입력"></td>
+                    </tr>
+                </tr>
+            </table>
+        </form>
+        <div>
+
+            <button class="but1"><a class="but3" href="../user/login.html">취소</a></button>
+            <button class="but2" type="submit"><a class="but3" href="../user/login.html">회원가입</a></button>
+
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Copyight@김철학(개발에반하다)</h3>
+        </div>
+    </footer>
+</body>
+</html>
